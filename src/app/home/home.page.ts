@@ -6,7 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  numero1:number;
+  numero2:number;
+  resultado:number;
 
   constructor() {}
 
+  sumar() {
+    this.resultado = this.numero1 + this.numero2;
+  }
+
+  limpiar_resultado() {
+    this.resultado = null;
+  }
 }
